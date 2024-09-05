@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+
+header {
+  background-color: #F3EED9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6em;
+}
+
+header div {
+  max-width: 50%;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+header h1 {
+  color: #824936;
+  font-size: 3rem;
+  text-align: center;
+
+  font-family: 'Playfair Display',sans-serif;
+}
+
+header h2 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #222C2A;
+
+  font-weight: 300;
+
+  font-family: 'Roboto',sans-serif;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2em;
+  padding: 4em;
+}
+
+.section1 h2 {
+  font-family: 'Playfair Display',sans-serif;
+  color:#824936;
+
+  font-size: 2rem;
+}
+
+.section1 .text {
+  display: flex;
+  justify-content: space-between;
+  text-wrap: wrap;
+
+  gap: 5em;
+}
+
+.section1 .text p {
+  font-family: 'Roboto',sans-serif;
+}
+
+
+.section2 {
+  background-color: #222C2A;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1em 4em;
+}
+
+.section2 .info, .section3 .info { 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+
+  gap: 2em;
+
+  color: white;
+}
+
+.section2 .info h2, .section3 .info h2 {
+  font-family: 'Playfair Display',sans-serif;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.section2 .info p, .section3 .info p {
+  font-family: 'Roboto',sans-serif;
+}
+
+.section2 .img, .section3 .img {
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2 img, .section3 img {
+  max-width: 70%;
+  border: none;
+}
+
+.section3 {
+  background-color: #824936;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1em 4em;
+}
+
+@media (max-width: 600px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  .section2,.section3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    gap: 2em;
+  }
+
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
